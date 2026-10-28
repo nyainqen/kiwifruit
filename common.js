@@ -4,13 +4,13 @@ const SITE = {
   wechat: "XXXXXXX",
   phone: "XXXXXXXXXXX",
   qrImage: "/images/wechat-qr.png",
-  nav: [
-    { href: "/index.html", label: "首页", icon: "🏠", navText: "首页" },
-    { href: "/products.html", label: "产品中心", icon: "🥝", navText: "产品" },
-    { href: "/story.html", label: "产地故事", icon: "🌿", navText: "故事" },
-    { href: "/about.html", label: "关于我们", icon: "ℹ️", navText: "关于" },
-    { href: "/contact.html", label: "联系购买", icon: "💬", navText: "联系" }
-  ]
+nav: [
+  { href: "/index.html",          label: "首页",     icon: "🏠", navText: "首页" },
+  { href: "/pages/products.html", label: "产品中心", icon: "🥝", navText: "产品" },
+  { href: "/pages/story.html",    label: "产地故事", icon: "🌿", navText: "故事" },
+  { href: "/pages/about.html",    label: "关于我们", icon: "ℹ️", navText: "关于" },
+  { href: "/pages/contact.html",  label: "联系购买", icon: "💬", navText: "联系" }
+]
 };
 
 /* 判断当前页 */
