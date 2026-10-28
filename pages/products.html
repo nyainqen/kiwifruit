@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>产品中心 · 陕西周至翠香猕猴桃</title>
-<meta name="description" content="周至猕猴桃当季鲜果，翠香10斤装、翠香5斤礼盒、红阳5斤装、华优5斤装，产地直供，坏果包赔。">
+<title>产品中心 · 周至金果 Zhikiwi</title>
+<meta name="description" content="周至金果 Zhikiwi 当季鲜果：绿心系列翠香、华优，红心系列红阳。产地直供，坏果包赔。">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -13,14 +13,13 @@
 
 <header class="page-header">
   <h1>当季鲜果</h1>
-  <p>周至产地直供，坏果包赔</p>
+  <p>周至金果 · 绿心与红心</p>
 </header>
 
 <section>
-  <div id="product-list" class="product-grid"></div>
+  <div id="product-list"></div>
 </section>
 
-<div id="site-wechat"></div>
 <div id="site-footer"></div>
 <div id="site-mobile-nav"></div>
 
@@ -28,23 +27,43 @@
 <script>
   const container = document.getElementById("product-list");
   if (container && typeof PRODUCTS !== "undefined") {
-    container.innerHTML = PRODUCTS.map(p => `
-      <div class="product-card">
-        <div class="product-img-wrap">
-          <img src="${p.image}" alt="${p.name}">
-          ${p.badge ? `<div class="product-badge">${p.badge}</div>` : ""}
-        </div>
-        <div class="product-info">
-          <h3>${p.name}</h3>
-          <p class="desc">${p.desc}</p>
-          <div class="price-row">
-            <span class="price">${p.price}</span>
-            <span class="unit">${p.unit}</span>
+    // 按系列过滤
+    const green = PRODUCTS.filter(p => p.series === "green");
+    const red = PRODUCTS.filter(p => p.series === "red");
+
+    // 渲染函数
+    function renderSeries(title, sub, items) {
+      if (!items.length) return "";
+      return `
+        <div class="series-block" style="max-width:900px; margin:0 auto 60px;">
+          <h2 style="font-size:22px; color:#3a5c32; margin-bottom:8px; text-align:center;">${title}</h2>
+          <p style="text-align:center; color:var(--text-light); font-size:14px; margin-bottom:32px; letter-spacing:1px;">${sub}</p>
+          <div class="product-grid">
+            ${items.map(p => `
+              <div class="product-card">
+                <div class="product-img-wrap">
+                  <img src="${p.image}" alt="${p.name}">
+                  ${p.badge ? `<div class="product-badge">${p.badge}</div>` : ""}
+                </div>
+                <div class="product-info">
+                  <h3>${p.name}</h3>
+                  <p class="desc">${p.desc}</p>
+                  <div class="price-row">
+                    <span class="price">${p.price}</span>
+                    <span class="unit">${p.unit}</span>
+                  </div>
+                  <a href="${p.detailUrl}" class="btn-outline">查看详情</a>
+                </div>
+              </div>
+            `).join("")}
           </div>
-          <a href="${p.detailUrl}" class="btn-outline">查看详情</a>
         </div>
-      </div>
-    `).join("");
+      `;
+    }
+
+    container.innerHTML =
+      renderSeries("绿心系列 · Green Heart", "翠绿果肉，细嫩多汁", green) +
+      renderSeries("红心系列 · Red Heart", "红心果肉，细腻甜润", red);
   }
 </script>
 <script src="/common.js"></script>
