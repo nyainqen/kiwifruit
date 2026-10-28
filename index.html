@@ -3,74 +3,109 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>陕西周至翠香猕猴桃 · 产地直供</title>
-<meta name="description" content="陕西周至翠香猕猴桃，秦岭北麓核心产区，树上八九分熟采摘，坏果包赔。扫码加微信，产地直供价。">
+<title>周至金果 Zhikiwi · 秦岭北麓翠香猕猴桃产地直供</title>
+<meta name="description" content="周至金果 Zhikiwi，源自陕西周至秦岭北麓。绿心翠香、红心红阳，出口注册果园，树上八九分熟采摘，坏果包赔。">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
+<!-- 导航栏（由 common.js 自动注入） -->
 <div id="site-nav"></div>
 
+<!-- 1. 首屏 Banner -->
 <header class="hero">
   <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">陕西 · 周至 · 产地直供</div>
-    <h1>秦岭北麓，终南山下</h1>
-    <p>翠香猕猴桃，树上八九分熟采摘，到手即食。</p>
+    <div class="hero-eyebrow">陕西 · 周至 · 出口注册果园</div>
+    <h1>周至金果 · 翠香系列</h1>
+    <p>秦岭北麓，道地好果。树上八九分熟采摘，产地直发全球。</p>
     <div class="hero-buttons">
-      <a href="/products.html" class="btn-main">查看当季鲜果</a>
-      <a href="/contact.html" class="btn-ghost">扫码加微信</a>
+      <a href="/pages/products.html" class="btn-main">查看当季鲜果</a>
+      <a href="/pages/contact.html" class="btn-ghost">扫码加微信</a>
     </div>
   </div>
 </header>
 
+<!-- 2. 三大信任背书 -->
+<section>
+  <div class="trust-grid">
+    <div class="trust-item">
+      <div class="trust-icon">🌿</div>
+      <h3>秦岭北麓核心产区</h3>
+      <p>世界猕猴桃原生地之一，日照超2000小时</p>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">🌍</div>
+      <h3>出口注册果园</h3>
+      <p>符合国际检疫标准，全程冷链直达海外</p>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">📦</div>
+      <h3>坏果包赔</h3>
+      <p>拍照即赔，售后无忧</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. 当季主打（由 JS 自动读取产品数据渲染） -->
 <section style="background:var(--primary-bg);">
   <h2 class="section-title">当季主打</h2>
-  <p class="section-sub">周至翠香，产地直供</p>
-  <div class="product-grid">
-    <div class="product-card">
-      <div class="product-img-wrap">
-        <img src="/images/product-cuixiang-10jin.jpg" alt="翠香猕猴桃10斤装">
-        <div class="product-badge">热销</div>
-      </div>
-      <div class="product-info">
-        <h3>翠香猕猴桃 · 10斤装</h3>
-        <p class="desc">70-90g/枚，果肉翠绿，细嫩多汁。</p>
-        <div class="price-row">
-          <span class="price">微信咨询价</span>
-          <span class="unit">10斤 / 箱</span>
-        </div>
-        <a href="/products/cuixiang-10jin.html" class="btn-outline">查看详情</a>
-      </div>
-    </div>
-    <div class="product-card">
-      <div class="product-img-wrap">
-        <img src="/images/product-cuixiang-gift.jpg" alt="翠香猕猴桃礼盒装">
-        <div class="product-badge">礼盒</div>
-      </div>
-      <div class="product-info">
-        <h3>翠香猕猴桃 · 礼盒装</h3>
-        <p class="desc">110g+/枚，12枚精装，送礼佳选。</p>
-        <div class="price-row">
-          <span class="price">微信咨询价</span>
-          <span class="unit">12枚 / 盒</span>
-        </div>
-        <a href="/products/cuixiang-5jin-gift.html" class="btn-outline">查看详情</a>
-      </div>
-    </div>
-  </div>
+  <p class="section-sub">周至金果，产地直供</p>
+  
+  <!-- 产品卡片渲染容器 -->
+  <div id="home-product-list" class="product-grid"></div>
+  
   <div style="text-align:center; margin-top:40px;">
-    <a href="/products.html" style="color:var(--primary); font-weight:600;">查看全部产品 →</a>
+    <a href="/pages/products.html" class="btn-outline" style="font-size:15px; padding:12px 30px;">查看全部产品 →</a>
   </div>
+</section>
 
+<!-- 4. 品牌与产地介绍引导 -->
+<section style="background:#fff;">
+  <div style="max-width:1000px; margin:0 auto; text-align:center;">
+    <h2 class="section-title">产地直供全球</h2>
+    <p class="section-sub">源自中国猕猴桃之乡，面向国际市场</p>
+    <p style="color:var(--text-mid); font-size:15px; max-width:800px; margin:0 auto 30px; line-height:1.8;">
+      周至金果（Zhikiwi）扎根陕西周至。我们不仅为您提供国内顶级的绿心与红心猕猴桃，更拥有出口注册果园资质。从标准化采摘、智能分选，到全程冷链物流，我们致力于将秦岭北麓的鲜美，安全、高效地送达全球消费者与采购商手中。
+    </p>
+    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+      <a href="/pages/story.html" class="btn-outline">了解产地故事</a>
+      <a href="/pages/contact.html" class="btn-main" style="padding:10px 26px; font-size:14px; border-radius:22px;">业务联系</a>
+    </div>
+  </div>
+</section>
 
-<div id="site-wechat"></div>
-
+<!-- 页脚和手机底部导航（自动注入） -->
 <div id="site-footer"></div>
-
 <div id="site-mobile-nav"></div>
 
+<!-- 引入产品数据和渲染脚本 -->
+<script src="/products-data.js"></script>
+<script>
+  // 渲染首页的 2 个主打产品卡片
+  const homeContainer = document.getElementById("home-product-list");
+  if (homeContainer && typeof PRODUCTS !== "undefined") {
+    homeContainer.innerHTML = PRODUCTS.slice(0, 2).map(p => `
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="${p.image}" alt="${p.name}">
+          ${p.badge ? `<div class="product-badge">${p.badge}</div>` : ""}
+        </div>
+        <div class="product-info">
+          <h3>${p.name}</h3>
+          <p class="desc">${p.desc}</p>
+          <div class="price-row">
+            <span class="price">${p.price}</span>
+            <span class="unit">${p.unit}</span>
+          </div>
+          <a href="${p.detailUrl}" class="btn-outline">查看详情</a>
+        </div>
+      </div>
+    `).join("");
+  }
+</script>
 <script src="/common.js"></script>
+
 </body>
 </html>
