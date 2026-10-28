@@ -6,7 +6,7 @@ const PRODUCTS = [
   {
     id: "cuixiang-putong",
     name: "翠香猕猴桃 · 10斤普通装",
-    image: "/images/products-cuixiang-putong.jpg",
+    image: "/images/products/cuixiang-putong.jpg",
     badge: "热销",
     desc: "70-90g/枚，10斤大箱装。果肉翠绿，细嫩多汁，适合家庭囤货或小型团购。",
     price: "微信咨询价",
