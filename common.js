@@ -3,7 +3,7 @@ const SITE = {
   brand: "周至翠香猕猴桃",
   wechat: "XXXXXXX",
   phone: "XXXXXXXXXXX",
-  qrImage: "/images/wechat-qr.png",
+  qrImage: "/images/wechat/wechat-qr.png",
 nav: [
   { href: "/index.html",          label: "首页",     icon: "🏠", navText: "首页" },
   { href: "/pages/products.html", label: "产品中心", icon: "🥝", navText: "产品" },
