@@ -33,7 +33,7 @@ function renderNav() {
     <nav class="navbar">
       <div class="logo">${SITE.brand}</div>
       <div class="nav-links">${links}</div>
-      <a href="/contact.html" class="nav-wechat">加微信</a>
+      <a href="/pages/contact.html" class="nav-wechat">加微信</a>
     </nav>
   `;
 }
