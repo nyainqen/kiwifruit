@@ -47,7 +47,7 @@ function renderFooter() {
       <img src="${SITE.qrImage}" alt="微信二维码" class="qr-small">
       <p>陕西周至翠香猕猴桃 · 产地直供</p>
       <p>微信：${SITE.wechat} &nbsp;|&nbsp; 电话：${SITE.phone}</p>
-      <p style="margin-top:14px; opacity:0.5;">© 2026 ${SITE.brand}</p>
+      <p style="margin-top:14px; opacity:0.5;">© ${SITE.brand}</p>
     </footer>
   `;
 }
