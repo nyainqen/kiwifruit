@@ -16,7 +16,7 @@ const PRODUCTS = [
   {
     id: "cuixiang-gift",
     name: "翠香猕猴桃 · 5斤礼盒装",
-    image: "/images/products-cuixiang-gift.jpg",
+    image: "/images/products/cuixiang-gift.jpg",
     badge: "礼盒",
     desc: "110g+/枚，5斤精装。果形饱满，附产地说明卡，送礼佳选。",
     price: "微信咨询价",
